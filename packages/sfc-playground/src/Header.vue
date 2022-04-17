@@ -80,15 +80,19 @@ async function fetchVersions(): Promise<string[]> {
       break
     }
   }
+
+  console.warn('hello!!!!!')
+
   return filteredVersions
 }
 </script>
 
 <template>
+  <div>test!</div>
   <nav>
     <h1>
       <img alt="logo" src="/logo.svg" />
-      <span>Vue SFC Playground</span>
+      <span>Vue SFC Playground!!</span>
     </h1>
     <div class="links">
       <div class="version" @click.stop>
@@ -286,6 +290,6 @@ h1 img {
 .share,
 .download,
 .github {
-  margin: 0 2px;
+  margin: 0 16px;
 }
 </style>
